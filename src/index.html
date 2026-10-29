@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts Unlimited</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f8; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        /* Шапка */
+        header { background-color: #2c3e50; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        header h1 { font-size: 1.8rem; letter-spacing: 1px; }
+        nav a { color: #ecf0f1; text-decoration: none; margin-left: 20px; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #3498db; }
+
+        /* Главный экран */
+        .hero { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #f4f6f8 0%, #d1d8e0 100%); }
+        .hero h2 { font-size: 3rem; color: #2c3e50; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; color: #555; margin-bottom: 2rem; max-width: 600px; }
+        
+        .badge { background-color: #2ecc71; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: bold; display: inline-block; margin-bottom: 2rem; animation: pulse 2s infinite; }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(46, 204, 113, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+        }
+
+        .btn { background-color: #3498db; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-size: 1.1rem; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background-color: #2980b9; }
+
+        /* Подвал */
+        footer { background-color: #2c3e50; color: #bdc3c7; text-align: center; padding: 1.5rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚙️ Parts Unlimited</h1>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">О нас</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="badge">Успешно развернуто через CI/CD</div>
+        <h2>Добро пожаловать в Parts Unlimited</h2>
+        <p>Этот сайт был автоматически собран и развернут с помощью GitHub Actions. Ни один файл не был загружен на сервер вручную.</p>
+        <a href="https://github.com/devops-mirea/Unlimited-Parts" class="btn">Посмотреть исходный код</a>
+    </main>
+
+    <footer>
+        &copy; 2024 Parts Unlimited. Сгенерировано для лабораторной работы по DevOps.
+    </footer>
+</body>
+</html>
