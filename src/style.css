@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f4f6f8; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+
+/* Шапка */
+header { background-color: #2c3e50; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+header h1 a { color: white; text-decoration: none; font-size: 1.8rem; letter-spacing: 1px; }
+nav a { color: #ecf0f1; text-decoration: none; margin-left: 20px; font-weight: 500; transition: color 0.3s; padding-bottom: 5px; border-bottom: 2px solid transparent; }
+nav a:hover, nav a.active { color: #3498db; border-bottom: 2px solid #3498db; }
+
+/* Основной контент */
+main { flex: 1; padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+h2 { font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem; text-align: center; }
+
+/* Главная */
+.hero { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 50vh; }
+.hero p { font-size: 1.2rem; color: #555; margin-bottom: 2rem; max-width: 600px; }
+.badge { background-color: #2ecc71; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: bold; display: inline-block; margin-bottom: 2rem; animation: pulse 2s infinite; }
+@keyframes pulse { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); } 70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(46, 204, 113, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); } }
+.btn { background-color: #3498db; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-size: 1.1rem; font-weight: bold; transition: background 0.3s; }
+.btn:hover { background-color: #2980b9; }
+
+/* Каталог */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.product-card { background: white; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+.product-icon { font-size: 3rem; margin-bottom: 1rem; }
+.product-card h3 { color: #2c3e50; margin-bottom: 0.5rem; }
+.product-card p { color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem; }
+.price { color: #e74c3c; font-weight: bold; font-size: 1.2rem; }
+
+/* О нас */
+.about-content { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); line-height: 1.6; }
+.about-content p { margin-bottom: 1rem; font-size: 1.1rem; }
+
+/* Подвал */
+footer { background-color: #2c3e50; color: #bdc3c7; text-align: center; padding: 1.5rem; font-size: 0.9rem; margin-top: auto; }
